@@ -20,8 +20,20 @@
    robot example.robot
    ```
 
+
+
 ## 📁 Structure
 - tests/ → test cases (web, api)
 - resources/ → reusable keywords & variables
 - results/ → output logs/reports
+
+## 🔹 Branch Roles
+| Branch      | Purpose                                                                 | Example Name                |
+|------------|-------------------------------------------------------------------------|----------------------------|
+| main       | Stores production-ready code that has been deployed.                   | main                       |
+| develop    | Collects all features ready for testing before release.                | develop                    |
+| feature/   | Used for developing individual new features.                            | feature/login, feature/add-project |
+| release/   | Used to prepare a release, run final tests, and fix small bugs before merging into main. | release/v1.0.0 |
+| hotfix/    | Used to quickly fix critical bugs found in production.                 | hotfix/fix-login-bug       |
+
 # makro-claim-automated
