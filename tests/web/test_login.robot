@@ -1,7 +1,10 @@
 *** Settings ***
-Resource   ../../resources/keywords/login_keywords.robot
+Library    SeleniumLibrary
 
 *** Test Cases ***
-User Can Login Successfully
-    Login To Application
-    [Teardown]    Close Browser
+Open Google And Search
+    Open Browser    https://google.com    chrome
+    Input Text    name=q    Robot Framework
+    Press Keys    name=q    RETURN
+    Page Should Contain    Robot Framework
+    Close Browser

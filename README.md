@@ -3,6 +3,9 @@
 ## 📦 Setup
 1. Create virtual environment:
    ```bash
+   //Go to project folder
+   cd ~/makro-claim-automated
+   
    python3 -m venv venv
    source venv/bin/activate
    ```
@@ -14,7 +17,7 @@
 
 3. Run tests:
    ```bash
-   robot --outputdir results tests/
+   robot example.robot
    ```
 
 ## 📁 Structure
