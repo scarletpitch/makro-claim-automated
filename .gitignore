@@ -1,0 +1,18 @@
+# Virtual environment
+venv/
+.env/
+
+# ChromeDriver
+chromedriver-mac-arm64/
+chromedriver.exe
+chromedriver_linux64/
+
+# Robot Framework reports
+output.xml
+log.html
+report.html
+results/
+*.png
+
+# macOS system files
+.DS_Store
