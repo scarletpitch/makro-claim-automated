@@ -36,4 +36,9 @@
 | release/   | Used to prepare a release, run final tests, and fix small bugs before merging into main. | release/v1.0.0 |
 | hotfix/    | Used to quickly fix critical bugs found in production.                 | hotfix/fix-login-bug       |
 
+## 🧩 Setup ChromeDriver
+1. Download ChromeDriver for your OS version:
+   https://googlechromelabs.github.io/chrome-for-testing/
+2. Extract it to: `./chromedriver-mac-arm64`
+
 # makro-claim-automated
