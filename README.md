@@ -6,8 +6,10 @@
    //Go to project folder
    cd ~/makro-claim-automated
    
-   python3 -m venv venv
+   python3.12 -m venv venv
    source venv/bin/activate
+   pip install webdriver-manager
+   pip install -U selenium robotframework-seleniumlibrary webdriver-manager
    ```
 
 2. Install dependencies:
@@ -18,6 +20,7 @@
 3. Run tests:
    ```bash
    robot example.robot
+   ../makro-claim-automated/venv/bin/python3 -m robot --pythonpath resources keywords/web/test_login.robot
    ```
 
 
