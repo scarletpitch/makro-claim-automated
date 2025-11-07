@@ -1,11 +1,12 @@
 *** Settings ***
 Library    SeleniumLibrary
+Library    ../resources/browser_setup.py
 Test Template    Login Test Template
 
 *** Variables ***
 ${URL}         https://transferhub-uat.cpaxtra.co.th/index.html
 ${PASSWORD}    Qa@12345
-${CHROMEDRIVER_PATH}    ${EXECDIR}/chromedriver-mac-arm64/chromedriver
+# ${CHROMEDRIVER_PATH}    /Users/pisha/.wdm/drivers/chromedriver/mac64/142.0.7444.61/chromedriver-mac-arm64/chromedriver
 
 *** Test Cases ***
 QA_SGR1    QA_SGR1
@@ -14,6 +15,7 @@ QA_SGR3    QA_SGR3
 *** Keywords ***
 Login Test Template
     [Arguments]    ${username}
+    ${CHROMEDRIVER_PATH}=    Get Chromedriver Path
     Open Browser    ${URL}    chrome    executable_path=${CHROMEDRIVER_PATH}
     Wait Until Page Contains Element    xpath=//a[@class='mx-name-tabPage1' and normalize-space()='Local']    10s
     Click Element    xpath=//a[@class='mx-name-tabPage1' and normalize-space()='Local']
