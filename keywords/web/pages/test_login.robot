@@ -13,6 +13,7 @@ QA_SGR1    QA_SGR1
 QA_SGR3    QA_SGR3
 
 *** Keywords ***
+//SGR
 Login Test Template
     [Arguments]    ${username}
     ${CHROMEDRIVER_PATH}=    Get Chromedriver Path
